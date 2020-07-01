@@ -4,5 +4,11 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />
+    <ProjectReference Include="..\DTO\DTO.csproj" />
+    <ProjectReference Include="..\IOC\IOC.csproj" />
+  </ItemGroup>
+
 
 </Project>
