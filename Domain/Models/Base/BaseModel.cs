@@ -1,4 +1,4 @@
-﻿using Domain.Enums;
+﻿using Commons.Enums;
 using System;
 
 namespace Domain.Models.Base

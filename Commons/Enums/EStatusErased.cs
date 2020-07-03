@@ -1,4 +1,4 @@
-﻿namespace Domain.Enums
+﻿namespace Commons.Enums
 {
     public enum EStatusErased
     {

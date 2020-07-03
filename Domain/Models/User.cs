@@ -1,4 +1,4 @@
-﻿using Domain.Enums;
+﻿using Commons.Enums;
 using Domain.Models.Base;
 
 namespace Domain.Models
@@ -13,6 +13,6 @@ namespace Domain.Models
 
         public string Username { get; set; }
         public string Password { get; set; }
-        public EAccessRole AccessRole { get; set; }
+        public EAccessRule AccessRole { get; set; }
     }
 }

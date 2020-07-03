@@ -1,4 +1,4 @@
-﻿using Domain.Enums;
+﻿using Commons.Enums;
 using DTO.DTO.Base;
 
 namespace DTO.DTO
@@ -13,6 +13,6 @@ namespace DTO.DTO
 
         public string Username { get; set; }
         public string Password { get; set; }
-        public EAccessRole AccessRole { get; set; }
+        public EAccessRule AccessRole { get; set; }
     }
 }

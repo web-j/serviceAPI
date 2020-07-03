@@ -49,7 +49,7 @@ namespace API
             //enable swagger
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("V1.0", new OpenApiInfo { Title = "SericeAPI", Version = "V1.0" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "SericeAPI", Version = "V1.0" });
             });
 
             //enum converter
@@ -57,6 +57,9 @@ namespace API
             {
                 options.SerializerSettings.Converters.Add(new StringEnumConverter());
             });
+
+            services.AddHttpContextAccessor();
+
 
             //security
             var key = Encoding.ASCII.GetBytes(Settings.Secret);
