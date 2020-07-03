@@ -28,7 +28,6 @@ namespace API
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers().AddNewtonsoftJson();
 
             //database connection and settings
             var connection = Configuration["SqlConnection:SqlConnectionString"];
@@ -44,6 +43,8 @@ namespace API
                     builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().Build();
                 });
             });
+
+            services.AddControllers().AddNewtonsoftJson();
 
             //enable swagger
             services.AddSwaggerGen(c =>
