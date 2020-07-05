@@ -2,7 +2,7 @@
 {
     public enum EStatusErased
     {
-        DELETED = 0,
-        NOT_DELETED = 1
+        NOT_DELETED = 0,
+        DELETED = 1
     }
 }

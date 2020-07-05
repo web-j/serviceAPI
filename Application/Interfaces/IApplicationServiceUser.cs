@@ -16,5 +16,14 @@ namespace Application.Interfaces
         void Remove(UserDTO obj);
 
         void Dispose();
+
+        // execution time interfaces
+        UserDTO Authenticate(string Password, string Username, string Email);
+
+        IEnumerable<UserDTO> GetAllErased();
+
+        void DeactivateList(IEnumerable<UserDTO> obj);
+
+        void Deactivate(UserDTO obj);
     }
 }
